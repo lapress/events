@@ -1,0 +1,19 @@
+{
+    "name": "lapress/events",
+    "description": "Events for laPress framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Szczepanski",
+            "email": "sebastian@ably.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "LaPress\\Events\\": "src/"
+        }
+    }
+}
