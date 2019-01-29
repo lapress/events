@@ -16,21 +16,23 @@ class RegisterSearchEvent
     public $query;
 
     /**
-     * @var int
+     * @var null|int
      */
     public $count;
 
     /**
-     * @var null
+     * @var null|string
      */
     public $model;
 
     /**
      * Create a new event instance.
      *
-     * @return void
+     * @param string      $query
+     * @param string|null $model
+     * @param int|null    $count
      */
-    public function __construct(string $query, int $count = 0, string $model = null)
+    public function __construct(string $query, string $model = null, int $count = null)
     {
         $this->query = $query;
         $this->count = $count;
